@@ -16,6 +16,9 @@ body {
 }
 
 #app {
+  width: 100%;
+}
+.app__wrapper {
   margin: auto;
   margin-top: 0;
   width: 1920px;
@@ -53,6 +56,9 @@ body {
 }
 .navbar {
   display: flex;
+}
+.navbar_button:first-child {
+  width: 0;
 }
 .navbar_button {
   width: 160px;
@@ -166,7 +172,10 @@ body {
 }
 
 @media (max-width: 1920px) {
-  #app {
+  .app__wrapper {
+    overflow-x: hidden;
+  }
+  .app__wrapper {
     width: 1000px;
   }
   .second_third_slides__wrapper {
@@ -175,7 +184,10 @@ body {
   }
 }
 @media (max-width: 1050px) {
-  #app {
+  * {
+    margin: 0;
+  }
+  .app__wrapper {
     width: 600px;
   }
   .header__wrapper {
@@ -201,5 +213,48 @@ body {
   }
   .third_slide {
     width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  * {
+    margin: 0;
+  }
+  .app__wrapper {
+    margin: auto;
+    width: 360px;
+  }
+  .header__wrapper {
+    width: 360px;
+  }
+  .header__wrapper_info > div {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  .header__wrapper_info {
+    justify-content: center;
+  }
+  #header_phone_icon,
+  #header_logOut_icon {
+    margin: 20px 0 0 0;
+  }
+  .header__wrapper_info > img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .nav {
+    overflow-y: hidden;
+  }
+  .navbar_button:first-child {
+    visibility: visible;
+    width: 100px;
+  }
+  .navbar_button {
+    visibility: hidden;
+    width: 0;
+  }
+  .second_third_slides__wrapper {
+    width: 360px;
   }
 }
