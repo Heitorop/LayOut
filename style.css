@@ -138,12 +138,12 @@ body {
   margin: 55px 22px 55px 22px;
 }
 .third_slide {
+  background-image: url("./img/Rectangle8.png");
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 880px;
-  background-image: url("./img/PORTEN.png");
 }
 .third_slide__title {
   display: flex;
