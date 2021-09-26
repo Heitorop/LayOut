@@ -188,8 +188,18 @@ body {
   .first_slide {
     margin-top: 26px;
   }
+  .second_slide {
+    width: 100%;
+  }
+  .second_third_slides__wrapper {
+    width: 600px;
+  }
   .second_slide__items__wrapper {
+    width: auto;
     flex-direction: column;
     align-items: center;
+  }
+  .third_slide {
+    width: 100%;
   }
 }
