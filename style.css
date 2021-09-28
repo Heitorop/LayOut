@@ -513,6 +513,7 @@ body {
   }
   .eighth_slide__item {
     width: 100%;
+    max-width: 600px;
     align-items: center;
     justify-content: center;
   }
@@ -545,6 +546,10 @@ body {
   }
   .seventh_slide__wrapper {
     flex-direction: column;
+  }
+  .eighth_slide__item_button__wrapper {
+    align-items: center;
+    justify-content: center;
   }
 }
 
