@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Porten</title>
 </head>
@@ -37,10 +38,15 @@
                     <img src="./img/PORTEN.png" alt="">
                     <div class="navbar__wrapper">
                         <div class="navbar">
-                            <div class="navbar_button"><span>меню</span></div>
-                            <div class="navbar_button"><span>понравилось</span></div>
-                            <div class="navbar_button"><span>личный кабинет</span></div>
-                            <div class="navbar_button"><span>настройки</span></div>
+                            <div class="navbar_button">
+                                <a href="#">Понравилось</a>
+                            </div>
+                            <div class="navbar_button">
+                                <a href="#">личный кабинет</a>
+                            </div>
+                            <div class="navbar_button">
+                                <a href="#">настройки</a>
+                            </div>
                         </div>
                         <div><img src="./img/Vector1.png" alt=""></div>
                         <div> <img src="./img/Vector(1).png" alt=""></div>
@@ -49,6 +55,18 @@
                             <label class="menu__btn" for="menu__toggle">
                                 <span></span>
                             </label>
+                            <ul class="menu__box">
+                                <li><a class="menu__item" href="#">Понравилось</a></li>
+                                <li><a class="menu__item" href="#">личный кабинет</a></li>
+                                <li><a class="menu__item" href="#">настройки</a></li>
+                                <div>
+                                    <span>
+                                        8 (812) 123-45-67 &nbsp; | &nbsp; Работаем 7 дней в неделю &nbsp; | &nbsp; 9:00
+                                        — 18:00
+                                    </span>
+                                </div>
+                            </ul>
+
                         </div>
                     </div>
                 </div>
@@ -77,27 +95,66 @@
                         <img src="./img/Line.png" alt="">
                     </div>
                     <div class="second_slide__items__wrapper">
-                        <div class="second_slide__item">
-                            <div class="second_slide__item__img">
-                                <img src="./img/62050.png" alt="">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="second_slide__swiper swiper-slide">
+                                    <div class="second_slide__item">
+                                        <div class="second_slide__item__img">
+                                            <img src="./img/62050.png" alt="">
+                                        </div>
+                                        <p>Louis XVI ATHOS</p>
+                                        <p>165 000 руб. </p>
+                                    </div>
+                                </div>
+                                <div class="second_slide__swiper swiper-slide">
+                                    <div class="second_slide__item">
+                                        <div class="second_slide__item__img">
+                                            <img src="./img/62050.png" alt="">
+                                        </div>
+                                        <p>Louis XVI ATHOS</p>
+                                        <p>165 000 руб. </p>
+                                    </div>
+                                </div>
+                                <div class="second_slide__swiper swiper-slide">
+                                    <div class="second_slide__item">
+                                        <div class="second_slide__item__img">
+                                            <img src="./img/62050.png" alt="">
+                                        </div>
+                                        <p>Louis XVI ATHOS</p>
+                                        <p>165 000 руб. </p>
+                                    </div>
+                                </div>
                             </div>
-                            <p>Louis XVI ATHOS</p>
-                            <p>165 000 руб. </p>
+                            <!-- If we need navigation buttons -->
+                            <div class="second_slide__item_arrows swiper-button-prev"></div>
+                            <div class="second_slide__item_arrows swiper-button-next"></div>
                         </div>
-                        <div class="second_slide__item">
-                            <div class="second_slide__item__img">
-                                <img src="./img/62050.png" alt="">
+                        <div class="second_slide__item_container">
+                            <div class="second_slide__item">
+                                <div class="second_slide__item__img">
+                                    <img src="./img/62050.png" alt="">
+                                </div>
+                                <p>Louis XVI ATHOS</p>
+                                <p>165 000 руб. </p>
                             </div>
-                            <p>Louis XVI ATHOS</p>
-                            <p>165 000 руб. </p>
-                        </div>
-                        <div class="second_slide__item">
-                            <div class="second_slide__item__img">
-                                <img src="./img/62050.png" alt="">
+                            <div class="second_slide__item">
+                                <div class="second_slide__item__img">
+                                    <img src="./img/62050.png" alt="">
+                                </div>
+                                <p>Louis XVI ATHOS</p>
+                                <p>165 000 руб. </p>
                             </div>
-                            <p>Louis XVI ATHOS</p>
-                            <p>165 000 руб. </p>
+                            <div class="second_slide__item">
+                                <div class="second_slide__item__img">
+                                    <img src="./img/62050.png" alt="">
+                                </div>
+                                <p>Louis XVI ATHOS</p>
+                                <p>165 000 руб. </p>
+                            </div>
                         </div>
+
                     </div>
                 </div>
                 <div class="third_slide">
@@ -108,9 +165,9 @@
                                 <h1>НОВАЯ КОЛЛЕКЦИЯ</h1>
                                 <img src="./img/Line.png" alt="">
                             </div>
-                            <div class="third_slide__button">
+                            <button class="third_slide__button">
                                 <p>КАТАЛОГ</p>
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -135,7 +192,7 @@
                                 natoque volutpat curabitur auctor. Viverra viverra ullamcorper scelerisque risus
                                 dignissim egestas. Id aliquam a aliquam egestas leo orci pharetra sed diam. </p>
                         </div>
-                        <div class="fifth_slide_main__button">посмотреть коллекцию</div>
+                        <button class="fifth_slide_main__button">посмотреть коллекцию</button>
                     </div>
                 </div>
             </div>
@@ -147,6 +204,39 @@
                             <h1>КОЛЛЕКЦИЯ 2018</h1>
                             <img src="./img/Line.png" alt="">
                         </div>
+                    </div>
+                    <div class="swiper1">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <div class=" swiper-slide">
+                                <div class="second_slide__item">
+                                    <div class="second_slide__item__img">
+                                        <img src="./img/62050.png" alt="">
+                                    </div>
+                                    <p>Louis XVI ATHOS</p>
+                                    <p>165 000 руб. </p>
+                                </div>
+                            </div>
+                            <div class=" swiper-slide">
+                                <div class="second_slide__item">
+                                    <div class="second_slide__item__img">
+                                        <img src="./img/62050.png" alt="">
+                                    </div>
+                                    <p>Louis XVI ATHOS</p>
+                                    <p>165 000 руб. </p>
+                                </div>
+                            </div>
+                            <div class=" swiper-slide">
+                                <div class="second_slide__item">
+                                    <div class="second_slide__item__img">
+                                        <img src="./img/62050.png" alt="">
+                                    </div>
+                                    <p>Louis XVI ATHOS</p>
+                                    <p>165 000 руб. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need navigation buttons -->
                     </div>
                     <div class="sixth_slide__main">
                         <div class="sixth_slide__main__items">
@@ -240,7 +330,7 @@
                     <div class="eighth_slide__bg"></div>
                     <div class="eighth_slide__item">
                         <h1>О МАГАЗИНЕ</h1>
-                        &nbsp;
+
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor
                             lectus nunc nulla nibh. Egestas amet consectetur vel vitae aliquam dictum suspendisse.
                             Lobortis eget consequat, tellus et et sed turpis. Pretium quisque vitae, amet, porttitor
@@ -248,7 +338,7 @@
                     </div>
                     <div class="eighth_slide__item">
                         <h1>КАТЕГОРИИ</h1>
-                        &nbsp;
+
                         <div class="eighth_slide__item_button__wrapper">
                             <div class="eighth_slide__item__button">
                                 <p>часы</p>
@@ -269,7 +359,7 @@
                     </div>
                     <div class="eighth_slide__item">
                         <h1>РАССЫЛКА</h1>
-                        &nbsp;
+
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor
                             lectus nunc nulla nibh.</p>
                         &nbsp;
@@ -277,7 +367,9 @@
                             <div class="item_input">
                                 <input type="email" placeholder="Ваша почта">
                             </div>
-                            <div class="item_button">ПОДПИСАТЬСЯ</div>
+                            <div class="item_button">
+                                <button>ПОДПИСАТЬСЯ</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -290,6 +382,8 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
