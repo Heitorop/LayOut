@@ -253,16 +253,16 @@ body {
 }
 .swiper {
   width: 50%;
+  min-width: 500px;
   height: 100%;
   display: none;
 }
 .swiper1 {
   width: 50%;
   height: 100%;
-  align-items: center;
-  justify-self: center;
   display: none;
 }
+
 .second_slide__item_arrows {
   color: grey;
 }
@@ -619,8 +619,17 @@ body {
   }
 
   .swiper1 {
+    min-width: 500px;
     display: flex;
+    justify-content: space-between;
   }
+  .second_slide__item {
+    margin: 10px;
+    min-width: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+
   .seventh_slide__wrapper > div {
     flex-direction: column;
   }
