@@ -22,6 +22,9 @@ body {
   margin: auto;
   margin-top: 0;
 }
+.over {
+  overflow-y: hidden;
+}
 .header__wrapper {
   width: 100%;
   max-width: 1150px;
@@ -556,6 +559,7 @@ body {
     visibility: visible;
     left: 0;
   }
+
   .menu__btn > span,
   .menu__btn > span::before,
   .menu__btn > span::after {
